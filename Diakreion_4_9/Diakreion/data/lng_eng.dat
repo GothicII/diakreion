@@ -1,0 +1,951 @@
+Update available
+You are running Diakreion
+The newer version of Diakreion
+is available on its website. Do you wish to download it?
+Modified
+No Convlett!
+Download
+old
+Detected
+Are you sure?
+Are you sure to leave the program?
+Your file has been modified. Are you sure to cancel the changes and reload the file?
+Your file has been modified. Are you sure to close it without saving?
+Are you sure to close all files but this one?
+File
+Edit
+Search
+View
+Dialog
+Tools
+Settings
+Help
+New
+Open
+Reopen
+Save
+Save As
+Rename
+Close
+Close All
+Exit
+Undo
+Redo
+Cut
+Copy
+Paste
+Select All
+Search
+Find in Files
+Find Next
+Find Previous
+Search and Replace
+Go To
+Always On Top
+Main Toolbar
+Dialog Toolbar
+Dialog Panel
+Lower Line 1
+Lower Line 2
+Dialog Panel On Right
+Upper Note
+Section Note
+End Dialog
+Convlett C -> P
+Convlett P -> C
+Check Convlett
+Dialog Settings
+Syntax Highlighter
+Auto Completor
+Language
+None
+Help
+Contribute
+About
+Close All But This
+Reload
+Save All
+Create
+Cancel
+Default
+Clear
+Created by
+Note (html link, ...)
+fill the author
+fill the note
+Make
+fill the section name
+fill the note to the section
+Exit Program
+Note to the section note
+New File
+New File Name + Extension
+NPC
+NPC name
+NPC voice
+Hero voice
+Set
+Rename File
+New Filename
+Rename
+New File
+Check
+Change
+Chapter 1 / Enter the world
+Before the camp
+Maximal
+Destination (line)
+Go
+I'm going nowhere
+Minimal
+Create File
+Open File
+Open Project
+File does not exist.
+Settings Saved On Change
+Open Last Tabs On Start
+Reopen Active
+Clear All Reopens
+New Project
+Open Project
+Project Operations
+Close Project
+Project
+All Texts Im/Export Transfer
+My New Project
+Are you sure to create new project?
+Are you sure to open a project?
+Are you sure to close the project?
+Do you want to close all project files?
+Are you sure to clear the project?
+New Project
+Open Project
+Open Project Files
+Save Project
+Save Project As
+Close Project Files
+Close Project
+Add To Project
+Add All Opened Files
+Clear Project
+Leave
+Close All Non-Project
+Are you sure to close all none-project files?
+Add To Project
+All Texts Ex/Import Transfer
+Replace all
+Match case
+Replace
+Whole Word
+Backwards
+Entire Scope
+Selected Only
+Prompt
+Close
+You don't have to pay for this program.
+But you can contribute.
+Write your comments about Diakreion
+At
+in any language
+in German language
+I'm still looking for members for my modding team
+For project
+Show on start
+Continue
+Discussions about Diakreion can be found here
+New versions are announced here
+You may want to write about bugs here
+New version of Diakreion available. Download here.
+Hide
+Open Project
+Open Project Files
+Close All But Project
+Save All
+Export Texts
+Import Texts
+The Im/Export works on every opened file.
+Files must not be modified between Export and Import.
+Write description
+Option description
+fill in
+Dialog Start
+Conditions
+Dialog Importance
+Dialog Denotion
+Hero Talks
+NPC Talks
+Increment
+Add
+Dialog End
+Dialog Option End
+All pos.
+Save Texts
+Load Texts
+Use basic type of transfer
+Full Transport
+TreeView Panel
+TreeView Panel Width
+Diary Start
+Diary Note
+Diary End Good
+Diary End Bad
+Diary Name
+Diary Says
+Error
+Warning
+bracket
+or
+Detected
+Line
+problem with
+Syntax checked.
+No errors found!
+Syntax check failed!
+Found
+errors
+warnings
+No warnings found!
+File
+please wait
+String
+repeated
+missing
+Checking file
+Syntax Check
+Show / Hide
+Create NPC
+Male
+ID
+Stren.
+More NPCs
+Daily Routines
+Full
+Appearance
+Daily Routines
+Basic rout.
+List of NPC Names
+Start ID
+Start Voice
+Strength
+Routines
+WP
+Basic Routines
+Generic
+Armor
+Random
+Create Dialog Files
+Save All Files
+Generate
+Create NPCs
+Output
+Select All + Copy To ClipBoard
+NPCs
+Campsite
+Camp Name
+Save Camp
+Load Camp
+Close
+Specify waypoints closest to freepoints.
+Intelligent
+Define Camp
+Sleep
+Guard
+Stand
+Sit Campfire
+Sit Bench
+Smalltalk
+Pee
+Report
+In Pairs
+In Trios
+Smalltalk WPs must come in pairs or trios.
+Status report: Generated
+NPCs
+Needed at least
+Warning!
+Not all places guarded.
+Not all NPCs have a place to sleep.
+beds
+No camp is defined. WPs Mode has been switched from intelligent to generic.
+Can sleep
+IDs
+Voices
+Enabled
+Generate IDs
+Generate Voices
+Generate Name
+Basic
+Auto
+Load Fields
+Save Fields
+Problem with list of IDs.
+Problem with list of Voices.
+The list of IDs is compromised.
+The list of Voices is compromised.
+The list of IDs do not correspond with the list of names.
+The list of Voices do not correspond with the list of names.
+Set to generic.
+NPC
+has an undefined routine No.
+Waypoint
+is not guarded at routine No.
+The number of Smalltalk WPs is wrong.
+Should be divisible by
+Guards Can Go Peeing.
+Rotate Guards.
+Guild
+Monolog
+End Dialog
+Standard Dialog
+Option Dialog
+Trader Dialog
+Dialog Continuation
+Quest Dialog
+Dialog Functions
+Teacher of Strength, Dexterity, Mana
+Teacher of Swords 1H, 2H, Bows, Crossbows
+Teacher of Life
+Teacher of Picklock, Sneak, Thief
+Diary
+NPC Creation
+Help
+Go
+Dialog
+NPC
+Update available
+Download now
+Last Tabs Loading
+File
+Add
+Item Identifier
+Item Name
+Item Type
+Material
+Life
+Mana
+Strength
+Dexterity
+Speed
+Max
+Text
+Slow Time
+Sound
+Funct
+Clear
+Default
+Max. effects
+Plant
+Food
+Food Big
+Potion
+Potion Fast
+Item
+Item Value
+Tabs
+Start Maximized
+Using Diakreion you are obliged to add info about it and
+the link to darkforests.info to the credits of your modification.
+Object Information
+Object Description
+Go For Definition
+Close Description
+Definition
+Rescan
+Close
+Save
+Erase
+Nothing found for
+Only description for
+Description
+Source
+Scanning in progress. It may take several minutes. Please wait
+Scanned
+file(s), found
+object(s)
+time
+Replace In Opened Files
+Copy All
+Paste All
+OU Updater
+Update OU
+Ou.bin
+Ou.csl
+Exclude Test Scripts
+Check Audio Dubbing
+Special files
+More
+Only Dialoge folder scan
+Scan also original VDF files
+Scan also MOD files
+Redefix
+Secret File List
+Change
+Cancel
+Double click on problem will open the files and select the problem lines.
+Re-update OUs after clearing problems.
+List of files
+No change of this memo has an effect on functions of Diakreion.
+Path to game Gothic I
+Browse
+Ok
+Example
+Files searched. Please wait
+Problem
+in
+and
+Missing dubbing
+Creating list of available audio files
+scanning
+Gothic directory not found. Generation failed.
+Checking uniqueness of dialogs
+No problems found.
+Found
+problem(s)
+OU generated by Diakreion in
+m
+s
+Items found
+Scan completed (searched
+files, found
+objects)
+Creating list of scanned files
+Searching and erasing the doubles
+Creating list of available audio files
+Scanning files for dialog objects
+Checking audio dubbing
+Audio dubbing scanned in
+Missing audio
+files, missing
+of audio
+Advanced Settings
+OU
+Commentary
+New
+FolderView Panel
+TreeView On Right
+FolderView On Right
+FolderView Panel Width
+Scripts Folder Only
+Reload
+Set the path to Gothic first!
+Re-Check
+File
+Folder
+Delete
+Create
+Play
+Pause
+Stop
+Start
+Music
+One
+Ambient
+Gothic 2
+No Sound
+No Music
+Window Mode
+Parse Scripts
+Run Spacer
+zSpy
+Convert Textures
+Convert Data
+Convert All
+VDFS Physical First
+Gothic
+NPC
+New File
+New Folder
+Delete
+Open in Diakreion
+Open All Files of this Folder
+Path to game Gothic II
+Gothic I
+Gothic II
+Use
+Close All to the Left
+Close All to the Right
+Reopen Last Closed File
+Uppercase
+Lowercase
+List of Features of Diakreion
+Wear
+Damage
+Type
+Munition
+Conditions
+Edge
+Point
+Magic
+Fire
+None
+Equip Bonus
+Str
+Dex
+Life
+Man
+Discussion About Diakreion
+Suggest New Feature
+Bug Tracker
+New Version Announcer
+Encoding
+Apply Encoding to Actual File Only
+Save File If Changed
+OU Im/Exporter
+Save
+Load
+Copy All
+Paste All
+P -> C
+C -> P
+Read OU
+Write OU
+Special Algorithm
+Report
+Ou is being read. Please wait
+File
+OU read
+Data do not correspond!
+Too few lines!
+OU Created.
+Scanning the file for forbidden symbols
+Scan completed. Found and erased
+symbols
+Apply
+Close
+OU Created by
+At
+Blocks
+Data
+Face
+Head
+Background Color
+Text Color
+Font Name
+Font Size
+Export
+Import
+Copy
+Paste
+Show Export
+Default
+Comments
+Constants
+Keywords
+Numbers
+Objects
+Strings
+Symbols
+Set
+Use
+Close
+Style
+Editor Settings
+Export Texts For Speakers
+Actual File Only
+All Open Files
+All Files in Dialog Folder
+Add Hint
+Which Voices
+Add File Names
+Add Dialog Names
+Only None-Dubbed Dialogs
+Denote Dubbed
+Export
+Save Text
+Close
+INI Creator
+Title
+Version
+Authors
+Webpage
+Description
+Icon
+VDF
+World
+Player
+Force Subtitles
+Default
+Generate
+Open in Diakreion
+Close
+Right Toolbar
+Statistics
+Files
+NPC Talks
+Hero Talks
+Number of Dubbed
+Number of None-Dubbed
+Hint
+Record the audio with the given file names.
+Format of Audio
+Compression and Settings
+Dialog
+Hero
+already dubbed
+File
+File
+NPC
+NPC Name
+NPC Voice
+Report
+Scanning
+Searching for audio files. Please wait
+Scan completed in
+m
+s
+More Info
+RC Update Available
+Update Available
+variable
+constant
+function
+prototype
+instance
+class
+Description
+Source
+Top
+Collapse All The Tree
+Expand All The Tree
+Open in Explorer
+Go To Folder
+Basic Script Creator
+Gothic 1
+Gothic 2
+Expansion
+Stand-alone
+English
+German
+Czech
+Polish
+Russian
+Basic Scripts
+Script Packets
+Read me
+Website
+Install
+Show Folder
+Close
+Report
+Hint: The destination folder should be empty.
+Info: Please add into credits of your modification all packets / software you uses to make a mod.
+Selecting the destination folder.
+Installing Scripts
+Installing Packet(s)
+Installing
+Installation completed.
+You are using none or obsolete Diakreion Library
+v
+Do you want to download the newest Diakreion Library
+not detected
+Download it here
+obsolete, download newest
+Diakreion Homepage
+Open INI Files
+RTF Creator
+New
+Load
+Save
+Show
+Bold
+Italic
+Font Size
+Set
+Left
+Center
+Right
+Just
+Underline
+Caps
+SCaps
+ReSet
+Read Actual File
+Write Actual File
+Insert Color Table
+Black
+Red
+Green
+Blue
+Note: Instead of \par tag go to the next line.
+Note: You can manually change or add colors. You can't use colors without table.
+Cop.
+Pas.
+Open VM Files (of VDFS)
+Open SRC Files
+Open PML Files (materials)
+Open MDS Files (animations)
+Open ASC Files (animations)
+ZEN Files Updater
+Scan Subfolders
+All ZENs
+Updating ZENs
+Update ZENs
+Report
+Close
+Hint: The ZENs should be named for example WORLD_001.ZEN, WORLD_002.ZEN ... Then the highest number will be taken and copied to WORLD.ZEN.
+ZENs updated.
+Rescan
+Updating
+NPC Appearance Updater
+Copy To Clipboard Only
+One Line
+Armor
+Face
+Head
+Male
+Random
+Load ZEN
+Save ZEN
+ZEN Repairer
+Repair Invisible Items
+Repairing items
+items repaired
+Hint: It works only on uncompiled ZENs.
+Advanced Syntax Check
+Actual File
+All Opened Files
+The Entire Scripts Folder
+Dialog Folder
+Items Folder
+Story Folder
+Specify Folder
+Syntax Check
+Old Algorithm
+Checking file
+Check completed
+Errors
+Warnings
+in
+Error
+Warning
+Line
+Semicolon ; or ELSE expected!
+AI_Output missing its text!
+Bracket (,) closing without opening!
+Bracket {,} closing without opening!
+String
+redefined
+as in
+Strings cannot be multilined!
+Long comment not closed!
+Constants
+Variables
+Functions
+Prototypes
+Instances
+Classes
+objects
+Reload All The Tree
+Collapse Location
+Expand Location
+Reload Location
+Of Folder
+Old
+Diakreion Textures Converter
+Load
+Save
+Drop files on the window.
+Clear
+Stretched
+Read Alpha
+Draw
+Effects
+Effects
+Apply
+File
+File
+Folder
+No file
+Standard
+Show Only
+Automatic Conversion
+To Format
+Add
+MipMaps
+Width
+Height
+Alpha Color
+Type
+MipMaps
+saved
+Export
+Invert Colors
+Kill Red
+Kill Green
+Kill Blue
+Maximize Red
+Maximize Green
+Maximize Blue
+Black n' White
+Lighten A Bit
+Darken A Bit
+Increase Red
+Increase Green
+Increase Blue
+Decrease Red
+Decrease Green
+Decrease Blue
+Change Colors Randomly A Bit
+Conversion of
+files ended in
+Error! Image sizes not divisible by
+Diakreion Gothic Music Player
+User
+Text
+Reload
+Play
+Next
+Change
+Stop
+About
+Gothic 1
+Gothic 2
+Random
+Double-click on the song will start it in the player.
+The settings (included paths to Gothics) is read and can be changed in Diakreion, the main application.
+Playing
+Gothic 1
+Gothic 2
+folder not found
+Runtime (min)
+Diakreion User Panel
+I Am Just An User
+Gothics Paths
+Exit Diakreion
+FAQ
+Show User Panel On Start
+Fatal Error! Diakreion Gothic Music Player can't stand alone without Diakreion. First run Diakreion and set the basic settings!
+There have been
+files modified. Are you sure to leave without saving?
+Texts Moving To The Right
+Advanced
+Delete File Content
+Create Animal
+Auto
+Based On
+Subtype
+Proto
+Name
+Level
+Strength
+Fly
+Threaten Before Attack
+Follow In Water
+Follow Time
+Now
+Scale
+Sleep Routine
+New Visual
+Start
+End
+Include Tenebris Difficulty Level Variables
+Random Values
+Autogenerate The Skills
+Generate Attributes and Protection Variables
+All
+Short
+Medium
+Long
+Fix Type By Random
+Fix Skin Type By Random
+Start Convlett
+Get Selected Text
+Search In Files
+Search In Opened Files
+Search In Files Of Folder
+Only .D Files
+Subfolders
+Browse
+Creating File List
+Search ended in
+Found
+objects in
+files
+Replace In Files
+Moving Texts Stopped
+Reload
+Play
+File Names
+Click to close
+Spell
+Spell Full
+Spell Checker
+Spell File
+Spell Entire File
+Auto
+On Settings
+Set
+Full Method
+Full
+Activated
+Language
+Auto
+Check None-D Files Full
+Check Body Of Files
+Check Strings
+Check Short Comments
+Check Long Comments
+Check Entire File By Auto Check
+Check 50 Lines Only
+Super Glow
+Spell-check Suggestions
+Refresh
+Sounds
+Diakreion Gothic Sounds Player
+Play
+Stop
+Repeat
+Extract
+Load VDF / MOD
+Show Hidden
+Close
+Size
+Games
+Start Game
+Pause Game
+Stop Game
+Hide
+Players
+Auto Move
+Draw Grid
+Close Game
+Load Script
+Map
+Created by
+Size
+Timer
+Added
+points
+New creature summoned.
+has been eliminated
+First load a global script.
+Be sure you are crazy enough for the games.
+The games can be scripted by everybody. See the Diakreion webpage for more info.
+The paths to Gothic must be set.
+Copy All Selected Names Into Clipboard
+Copy All Selected Names Without Extension Into Clipboard
+Forbidden land
+Min
+Sec
+Score
+Code
+Verifier
+Verify
+Auto Start
+Action
+Plugins
+Feature Not Available!
+Download All Plugins
+Do Nothing
+You are missing
+Download
+Installed
+Available
+Download
+Plugins
+All Plugins Pack
+Rescan
+FPS Limit to
+Open in Split Window
+Copy to Split Window
+Split Window

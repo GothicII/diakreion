@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Settings>
+  <GothicPath></GothicPath>
+  <SrcFile>\_work\Data\Scripts\Content\Gothic.src</SrcFile>
+  <OUFile>OU</OUFile>
+  <FilterComments>False</FilterComments>
+  <ShowDoubles>True</ShowDoubles>
+  <UseHotkey>True</UseHotkey>
+  <Hotkey>123|False|False|False</Hotkey>
+  <Mode>2</Mode>
+  <OULengthEnabled>False</OULengthEnabled>
+  <PathSpeech />
+  <PathSubSpeech />
+  <CharsPerSecond>15</CharsPerSecond>
+  <MinLength>1</MinLength>
+  <MaxLength>30</MaxLength>
+  <BaseLength>0</BaseLength>
+</Settings>

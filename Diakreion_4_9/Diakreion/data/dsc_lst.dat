@@ -1,0 +1,161 @@
+80
+ItFo_RustyDrink
+To je Rustyho drink
+Npc_WasInState
+Abfrage auf den vorherigen Zustand einer Spielfigur True/False
+Npc_IsInState
+Abfrage auf den aktuellen Zustand einer Spielfigur True/False
+AI_SetNpcsToState
+Setze alle NSCs im Umkreis von x cm in entsprechenden AI-Zustand, buggy
+Print
+Ausgabebefehl, der Text ins Game schreibt (wie OutputunitTexte).
+PrintMulti
+Printbefehl, der aus den angegebenen Strings einen Auswählt und auf den Bildschirm schreibt.
+PrintDebug
+Printausgabe, die nur bei eingeschaltetem Debugmodus (Alt+D) im Spy/logfile ausgegeben wird.
+PrintScreen
+Gibt den Text 'msg' auf dem Bildschrim aus und benutzt dabei den Font 'font'. Die Position ist für jede Koordinate eine Zahl zwischen 0 und 99 und gibt die prozentuale Position an. Der Ursprung befindet sich oben links (also 0% X und 0% Y).
+Hlp_Random
+Erzeugt einen Zufallswert (wobei n0 Obergrenze : [0..n0-1] ), Rückgabewert integer.
+Hlp_StrCmp
+Hilfsfunktion um zwei Strings miteinander zu vergleichen liefert bei Gleichheit eins zurück.
+Hlp_IsValidNpc
+Prüfe ob NSC-Instanz gültig und initialisiert ist. True/False.
+Hlp_IsValidItem
+Prüfe ob Item-Instanz gültig und initialisiert ist True/False.
+Hlp_IsItem
+Prüft, ob der Gegenstand 'item' den Instanznamen 'instanceName' trägt. Will man z.B. testen, ob die globale Variable item Pfeile sind (ItMuArrow) ruft man Hlp_IsItem(item,ItMuArrow) auf. Gribt bei Gleichheit TRUE, sonst FALSE zurück.
+Hlp_GetNpc
+Ermittle einen NSC über den Instanznamen. Dieser kann einer Variablen zugewiesen werden und ist somit gezielt verfügbar.
+Hlp_GetInstanceID
+Liefert die interne ID ( nicht Var aus der Instanz) zurück, um zwei items miteinander vergleichen zu können ( integer Vergleich).
+AI_Wait
+Character wird für n1 Sekunden in einen Wait-Zustand versetzt, d.h. er tut nichts, aber Treffer etc.(passive Wahrnehmung) werden registriert.
+Npc_GetStateTime
+Liefert Anzahl Sekunden, wie lange der NSC sich in diesem Zustand im "Loop" befindet.
+Npc_SetStateTime
+Setzt_ Anzahl Sekunden, wie lange der NSC sich in diesem Zustand im "Loop" befindet. --> Das ist dann über Npc_GetStateTime abfragbar.
+Wld_GetDay
+Liefert den aktuellen Tag zurück (Zähler), hierbei ist der StartTag (Gamestart) = 0.
+Wld_IsTime
+Liefert "1" wenn aktuelle Weltzeit zwischen den beiden angegebenen Zeiten liegt (von - bis).
+Wld_InsertNpc
+Füge NSC in Welt ein. Wobei Spawnpoint entweder ein WP oder ein FP sein darf.
+AI_PlayAni
+Npc-Instanz spielt die angegebene Animation ab.
+AI_StandUp
+Ist der Nsc in einem Animatinsstate, wird die passende Rücktransition abgespielt. Benutzt der NSC gerade ein MOBSI, poppt er ins stehen.
+AI_StandUpQuick
+Wie AI_StandUp(), jedoch werden keine Rücktransitionen abgespielt, sondern auch dort wird sofort in den Grundzustand "gepoppt". Wichtig für sehr eilige Situationen!
+AI_Quicklook
+NSC kurz ( 2 sec) anschauen ( nur Kopf bewegt sich ).
+AI_LookAt
+Schaue auf einen Wegpunkt (Wegpunktname angeben) oder auf ein anderes Objekt (Vobname angeben).
+AI_LookAtNpc
+Schaue zu einem NSC.
+AI_StopLookAt
+Wieder geradeaus schauen.
+AI_PointAt
+Zeige auf einen Wegpunkt (Wegpunktname angeben) oder auf ein anderes Objekt (Vobname angeben).
+AI_PointAtNpc
+Zeige auf einen NSC.
+AI_StopPointAt
+Nicht mehr auf etwas zeigen.
+AI_TakeItem
+Der Npc nimmt mit dieser Funktion die globale Item-Instanz auf.
+AI_DropItem
+Item(itemid) wird auf den Boden fallen gelassen.
+AI_UseItem
+Item bis zum Ende benutzen.
+AI_UseItemToState
+Item benutzen bis zum angegebenen State.
+AI_UseMob
+Benutze Mob mit angegebenen Schema-Namen bis zum Zustand "targetState". Wird diese Funktion aufgerufen und der angegebene 'targetState' ist bereits vorhanden, läuft der NSC zwar trotzdem zum MOB, tut dann aber nichts.
+Wld_IsMobAvailable
+Sucht sich ein Mobsi im Umkreis von 10m und liefert TRUE falls gefunden. MOB wird nur zurückgeliefert, wenn es nicht besetzt ist.
+Wld_GetMobState
+Liefert den State zum nächsten Mob mit 'schemeName' zurück bzw. '-1' wenn kein solches Mob gefunden wurde.
+AI_SetWalkmode
+Gibt an mit welchem Walkmode Run etc der Character durch das Level läuft,  NPC_RUN	- Rennen ,NPC_WALK - Gehen, NPC_SNEAK - Schleichen, NPC_RUN_WEAPON	: Rennen mit gezogener Waffe, NPC_WALK_WEAPON - Gehen mit gezogener Waffe, NPC_SNEAK_WEAPON - Schleichen mit gezogener Waffe.
+AI_GotoWP
+Npc-Instanz läuft zum namentlich angegeben Waypoint.
+AI_GotoFP
+Sucht sich einen Freepoint im Umkreis von 20m vom NSC, bewegt sich dorthin und richtet sich entsprechend aus. Suchkriterium wie bei Wld_IsFPAvailable().
+AI_GotoNextFP
+Wie AI_GotoFP() allerdings Suchkriterium wie bei Wld_IsNextFPAvailable().
+AI_GotoNpc
+"self" geht zu "other"
+AI_GotoItem
+"self" geht zu "item"
+AI_GotoSound
+Npc läuft zum Sound.
+AI_Teleport
+Teleportiert den NSC zur angegebenenen Location.
+Npc_GetNearestWP
+Liefert den Namen des am nächsten gelegenen Waypoints zurück.
+Npc_GetNextWP
+Liefert den zweitnahesten WP vom NSC zurück.
+Wld_IsFPAvailable
+Sucht einen Freepoint im Umkreis von 20m vom NSC und liefert TRUE falls vorhanden und frei ('self' zählt als Blockierer nicht!) und sichtbar.
+Wld_IsNextFPAvailable
+Wie Wld_IsFPAvailable(), aber es wird immer der nahegelegenste genommen und 'self' zählt als Blockierer!
+Npc_IsOnFP
+Abfrage darauf, ob der Nsc auf einem Freepoint mit name Teilstring steht.
+Npc_IsWayBlocked
+Liefert "1", falls Weg von NSC durch Hindernis versperrt ist.
+AI_TurnToNpc
+Drehe Dich zum angegeben (zweiten) Npc um.
+AI_TurnAway
+Der NSC "self" dreht dem NSC "other" den Rücken zu.
+AI_WhirlAround
+Schnelle Drehung zu other.
+AI_TurnToSound
+Charakter dreht sich zur Geräuschquelle.
+AI_AlignToWP
+Richtet den Nsc am Waypoint aus (im Spacer gesetzte Pfeilrichtung).
+AI_Dodge
+Der Nsc weicht ein Stück nach hinten aus.
+Mdl_ApplyOverlayMds
+Mit diesem Befehl werden Animationen auf einem höheren Layer gestartet (z.B. hat der Zombie ein Overlay über die normalen Human-Animationen).
+Mdl_RemoveOverlayMDS
+Entferne ein Overlay-MDS.
+Mdl_ApplyOverlayMDSTimed
+Overlay-MDS wird gestartet und automatisch nach der angegebenen Zeit abgeschaltet.
+Mdl_ApplyRandomAni
+Fügt Zufallsanimationen (am Kopf kratzen, an den Sack packen etc (s2)) für bestimmte Animationszustände (s1) ein.
+Mdl_ApplyRandomAniFreq
+Hiermit kann die Frequenz betimmt werden, wie oft die für den Animationszustand (s1) deklarierten Randomanis abgespielt werden.
+Mdl_StartFaceAni
+Starte Gesichtsanimation // intensity 1 = 100% // holdTime -1 = forever.
+Game_InitEnglish
+Setzt die interne Engine-Variablen auf English..
+Game_InitGerman
+Setzt die interne Engine-Variablen auf Deutsch..
+Log_AddEntry
+Der Befehl fügt dem Topics topic ein neues Entrz namens entry hinzu. Wie auch bei der Erzeugung von Topics dient hier der Name sowohl zur Identifikation als auch zur Anzeige und muss somit eindeutig sein. Doppelte Einträge werden auch hier ignoriert.
+Log_SetTopicStatus
+Der Befehl ändert den Status des Topics 'name' in 'status'. Er sollte nur für Topics verwendet werden, die für die Sektion LOG_MISSION erzeugt wurden.
+Log_CreateTopic
+Der Befehl fügt unter der Sektion 'section' ein neues Topic mit Namen 'name' ein. Sollte bereits ein Topic dieses Names in irgendeiner Sektion existieren, wird das Topic nicht hinzugefügt.
+PrintDebugCh
+Gibt nur den Text eines bestimmten Channels wieder, unabhängig von der Instanz.
+PrintDebugInstCh
+Gibt nur in einem bestimmten channel liegende Debuginfos einer Instanz aus.
+PrintDebugInst
+Gibt nur den Debugtext der eingeschalteten (SetDebugFocus --> siehe Intranetpage Erweitertes Skript-Debugging) Instanz aus.
+ConcatStrings
+Erzeugt eine Kopie von dem ersten angegebenen String, hängt den zweiten an diesen an und gibt den neuen String zurück.
+IntToFloat
+Wie float to int, nur daß ein integer in float umgewandelt wird.
+FloatToInt
+Konvertiert einen float in einen int, hier wäre es noch ganz schön zu wissen, wie mit dem float umgesprungen wird --> schneiden oder runden.
+IntToString
+Funktion überträgt eine Integer variable in eine Stringvariable (Rückgabewert : string).
+AI_StartState
+Versetzt den Nsc aus den Skripten heraus in den entsprechenden ZS (what), stateBehaviour sagt : "0"-aktuellen Zustand abbrechen "1"-aktuellen Zustand erst ordnungsgemäß beenden (End-Funktion aufrufen).
+AI_Flee
+Der Befehl muss, wie AI_Attack(), in der ZS-Loop regelmaessig aufgerufen werden und setzt voraus, dass vorher mit Npc_SetTarget( self, <var c_npc enemy> ) ein Gegner gesetzt wurde, vor dem der Npc fliehen soll.
+Npc_IsDead
+Funktion liefert einen Wert zurück, falls Dead true ist.
+VOID
+The NULL return value. Used in procedures to show that the procedure doesn't return value.

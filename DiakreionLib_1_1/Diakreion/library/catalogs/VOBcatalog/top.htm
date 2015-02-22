@@ -1,0 +1,119 @@
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=iso-8859-1">
+	<TITLE>VOB-Katalog</TITLE>
+	<META NAME="AUTHOR" CONTENT="Felix Horn aka HornOx">
+	<link rel=stylesheet type="text/css" href="style.css">
+<script type="text/javascript">
+<!--
+var vobs=new Array();
+var ansichten = new Array("_oben","_vorn","_links","_perspektive");
+
+function frameschreiben () {
+	//Rahmenfarben
+	var mycolor=new Array("#000000","#0000FF","#FF0000","#800080","#00FF00"); //mehr macht eigentlich keinen Sinn...
+	var kategorie = document.form1.kategorie.options[document.form1.kategorie.selectedIndex].text;
+	if (parent.document.getElementById && parent.document.getElementById("frame_unten") && top.document.getElementById("frame_unten").cols) {
+		if		(parent.document.getElementById("frame_unten").cols=="138,*" && document.form1.ansicht[1].checked) parent.document.getElementById("frame_unten").cols="438,*"
+		else if	(parent.document.getElementById("frame_unten").cols=="438,*" && document.form1.ansicht[0].checked) parent.document.getElementById("frame_unten").cols="138,*"
+	}
+	var inhalt="<html><body bgcolor=\"#DDDDFF\">";
+	//alle vobs sammeln die angezeigt werden sollen
+	var temp_vobs=new Array();
+	for(var i=0;i<vobs[kategorie].length;++i)
+		if ((document.form1.quelle[0].checked && (vobs[kategorie][i][3] & 4)) || (document.form1.quelle[1].checked && (vobs[kategorie][i][3] & 2)) || (document.form1.quelle[2].checked && (vobs[kategorie][i][3] & 1)))
+			temp_vobs.push(vobs[kategorie][i]);
+	if (document.form1.ansicht[0].checked) 
+		for(var i=0;i<temp_vobs.length;++i) {
+			inhalt+=anfang(mycolor[temp_vobs[i][3]])+"<a href=\""+ temp_vobs[i][0]+temp_vobs[i][1]+".3ds"+ansichten[temp_vobs[i][2]] +".jpg\" target=bild onclick='return parent.oben.klick1(\""+temp_vobs[i][0]+"\",\""+temp_vobs[i][1]+"\",\""+temp_vobs[i][2]+"\");'><img border=0 alt=\"Vob\" width=\"100\" height=\"100\" src=\"tn/"+ temp_vobs[i][0]+temp_vobs[i][1]+".3ds"+ansichten[temp_vobs[i][2]] +".png\"></a>"+ende(temp_vobs[i][1]);
+		}
+	else 
+		for(var i=0;i<temp_vobs.length;++i) {
+			inhalt+=anfang(mycolor[temp_vobs[i][3]]);
+			for(var j=0;j<ansichten.length;++j)
+				inhalt+="<a href=\""+ temp_vobs[i][0]+temp_vobs[i][1]+".3ds"+ansichten[j] +".jpg\" target=bild onclick='return parent.oben.klick1(\""+temp_vobs[i][0]+"\",\""+temp_vobs[i][1]+"\",\""+ansichten[j]+"\");'><img border=0 alt=\"Vob\" width=\"100\" height=\"100\" src=\"tn/"+ temp_vobs[i][0]+temp_vobs[i][1]+".3ds"+ansichten[j] +".png\"></a>";
+			inhalt+=ende(temp_vobs[i][1]);
+		}
+	inhalt+="</body></html>";
+	parent.frames["links"].document.open("text/html","replace");
+	parent.frames["links"].document.write(inhalt); // verbessere ich irgendwann mal...
+	parent.frames["links"].document.close();
+	return true
+}
+function anfang (farbe) {
+	return document.form1.rahmen.checked ? '<span style="padding:2px; background-color:'+farbe+'">' : "";
+}
+function ende (dateiname) {
+	return (document.form1.rahmen.checked ? '</span>' : "")+(document.form1.namenzeigen.checked ? "<br>"+dateiname+".3ds<br>" : "");
+}
+function kategorieauswahl () {
+	var output="<select name=\"kategorie\" onChange=\"return frameschreiben();\">\n";
+/*	unsortiert: */
+	for (var Kategorie in vobs)
+		output+="<option>"+Kategorie+"</option>\n"; /**/
+/*	oder sortiert:
+	var temp=new Array("Items/Orkwaffen","Items/Äxte","Items/Keulen und Stäbe","Items/Hämmer","Items/Schwerter","Items/Rüstungen","Items/Bögen und Armbrüste","Items/Sonstiges"," Items/Magie","Items/Schriften","Items/Trophäen","Items/Nahrung","Items/Tränke","Items/Schlüssel","Items/Amulette und Ringe","Bretter und Holzstücke","Gebäude und großes Zeug","Einrichtungsgegenstände","Leuchter und Fackeln","Skelettteile","Skulpturen","bearbeitete Steine","Steine und Felsen","Tore und was dazugehört","Gitter","Brückenteile","Treppen","Pflanzen","Abgestorbene Bäume und Wurzeln","Bäume","Sonstiges Zeug","Schrott","alles außer Items");
+	for(var i=0;i<temp.length;++i) 
+		output+="<option>"+temp[i]+"</option>\n";/**/
+	return output+="</select>";
+}
+
+function klick1 (verzeichnis,name,ansicht) {
+	if (parent && parent.oben && parent.oben.document.form1 && parent.oben.document.form1.namenausgabe) { // manche Browser erlauben nicht das man von einem anderen Frame auf ein Formulafeld zugreift :(
+		parent.oben.document.form1.namenausgabe.value=name+".3DS"; // die funktion wird von einem anderen Frame aufgerufen, deshalb das "top"
+		if (!(window.clipboardData && window.clipboardData.setData && window.clipboardData.setData("Text",name+".3DS")))
+			parent.oben.document.form1.namenausgabe.select();
+		return true;
+	} else { //extra für Opera aber mit fehlerhaftem HTML-Syntax
+		var inhalt='<html><body><input type="text" id="temp" size="30" value="'+name+".3DS"+'" readonly="readonly"><Scri';
+		inhalt+='pt>document.getElementById&&document.getElementById("temp")&&document.getElementById("temp").select();</Scr';
+		inhalt+="ipt><br><img alt=\"Bild\" src=\""+verzeichnis+"/"+name+".3ds"+ansicht+".jpg\">";
+		parent.frames["bild"].document.open("text/html","replace");
+		parent.frames["bild"].document.write(inhalt);
+		parent.frames["bild"].document.close();
+		return false;
+	}
+}
+
+//-->
+</script><script type="text/javascript" src="new_data.js"><!--
+//--></script>
+</HEAD>
+
+<BODY bgcolor="#ddddff" text="#000000" link="000099" vlink="000099">
+<!---
+ Kopfzeile
+ --->
+<noscript><h1>These pages require JavaScript to be Enabled</h1></noscript>
+<FORM name="form1" action="#">
+<table cellpadding=4 cellspacing=0 border=0>
+<tr>
+<td>
+<script type="text/javascript">
+<!--
+	document.write(kategorieauswahl());
+//-->
+</script><br>
+<input type="text" name="namenausgabe" size="36" value="" readonly><br>
+</td><td>
+<input type="radio" name="ansicht" onClick="return frameschreiben();">One view per VOB<br>
+<input type="radio" name="ansicht" onClick="return frameschreiben();" checked>Four views per VOB<img src="vobbilder.gif" border=0 width=1 height=1 alt="nix">
+</td><td>
+<input type="checkbox" name="quelle" onClick="return frameschreiben();" checked>Personal VOBs<br>
+<input type="checkbox" name="quelle" onClick="return frameschreiben();" checked>Gothic 2<br>
+<input type="checkbox" name="quelle" onClick="return frameschreiben();" checked>Gothic 1
+</td><td>
+<input type="checkbox" name="rahmen" onClick="return frameschreiben();">Frames<br>
+<input type="checkbox" name="namenzeigen" onClick="return frameschreiben();">Show file name
+</td><td>
+<a href="http://devmode.de/gothic/vobbilder/faq.htm" target="_top">Help &amp; FAQ</a>
+</td></tr>
+</table>
+
+</form><script type="text/javascript">
+<!--
+	frameschreiben();
+//-->
+</script>
+</BODY>
+</HTML>
